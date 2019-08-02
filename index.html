@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>博客园</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div data-role="page" id="home">
+        <div data-role="header" data-position="fixed">
+            <h1>博客园</h1>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-inset="true" id='content'>
+               <!--插入页面数据-->
+            </ul>
+        </div> 
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><button data-role="button" class="button" id="pre">上一页</button></li>
+                    <li><button data-role="button" class="button" id="page">第1页</button></li>
+                    <li><button data-role="button" class="button" id="next">下一页</button></li>
+                </ul> 
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
