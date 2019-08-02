@@ -49,7 +49,7 @@ http.createServer(function(request,response){
             response.end(pathname+"文件不存在！");
         }
     });
-}).listen(8080);  //监听80端口
+}).listen(8081);  //监听80端口
 
 console.log('web服务已运行！');
 
