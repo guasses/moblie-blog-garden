@@ -40,7 +40,7 @@ function getData(i,callback){
                     //添加到数组尾部
                     blogList.push(blog);
                 });
-                callback(blogList);
+                callback(blogList);//回调函数
             }
         });
 }
