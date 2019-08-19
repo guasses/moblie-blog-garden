@@ -8,10 +8,10 @@ const cheerio = require('cheerio');
  * @return array 返回博客数组列表
  */
 function getData(i,callback){
-    superagent.post("https://www.cnblogs.com/mvc/AggSite/PostList.aspx")
+    superagent.post("https://www.cnblogs.com/AggSite/AggSitePostList")
         .send({CategoryId: 808,     //发送数据到服务器
             CategoryType: "SiteHome",
-            ItemListActionName: "PostList",
+            ItemListActionName: "AggSitePostList",
             PageIndex: i,           //根据i获取相应的页面数据
             ParentCategoryId: 0,
             TotalPostCount: 4000})
